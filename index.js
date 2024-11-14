@@ -50,8 +50,8 @@ async function readAllBooks() {
     }
  })
 
-
- // Get movie by Title:
+ 
+ // Get books by Title:
 
  async function readBookByTitle(bookTitle) {
     try{
