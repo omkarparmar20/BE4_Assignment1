@@ -1,3 +1,4 @@
+require("dotenv").config();
 const {initializDatabase} = require("./db/db.connect");
 const book = require("./models/books.model");
 const express = require("express");
