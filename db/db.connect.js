@@ -10,10 +10,7 @@ const initializDatabase = async () => {
     }
 
     try {
-        await mongoose.connect(mongoUri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
+        await mongoose.connect(mongoUri); // No need for options anymore
         console.log("Connected to Database");
     } catch (error) {
         console.error("Error connecting to Database:", error.message);
